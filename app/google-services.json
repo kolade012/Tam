@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "819822541945",
+    "project_id": "tam-app-7a17b",
+    "storage_bucket": "tam-app-7a17b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819822541945:android:063d6a34a854fa12d1a8a8",
+        "android_client_info": {
+          "package_name": "com.example.tam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL_aod-Fe2E_dlOcfuQ_xScYnQuixNiC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
