@@ -69,7 +69,7 @@
         android:id="@+id/textView5"
         android:layout_width="163dp"
         android:layout_height="38dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="28dp"
         android:text="Already have an account?"
         android:textColor="#858383"
@@ -77,23 +77,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button5"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.049" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="180dp"
         android:layout_height="38dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginBottom="220dp"
         android:background="@color/white"
         android:text="sign up to time sort"
         android:textColor="#261200"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
-        app:layout_constraintVertical_bias="1.0"
         tools:ignore="TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
