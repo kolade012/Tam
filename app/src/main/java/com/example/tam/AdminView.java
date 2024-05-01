@@ -106,14 +106,14 @@ public class AdminView extends AppCompatActivity {
             holder.textViewTime.setText(entry.getTime());
             holder.textViewDate.setText(entry.getDate());
 
-            holder.editButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    // Perform edit action with the selected entry
-                    Entry selectedEntry = entryList.get(holder.getAdapterPosition());
-                    editEntry(selectedEntry, v.getContext());
-                }
-            });
+//            holder.editButton.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    // Perform edit action with the selected entry
+//                    Entry selectedEntry = entryList.get(holder.getAdapterPosition());
+//                    editEntry(selectedEntry, v.getContext());
+//                }
+//            });
 
             holder.deleteButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -140,18 +140,18 @@ public class AdminView extends AppCompatActivity {
                 textViewVenue = itemView.findViewById(R.id.textViewVenue);
                 textViewTime = itemView.findViewById(R.id.textViewTime);
                 textViewDate = itemView.findViewById(R.id.textViewDate);
-                editButton = itemView.findViewById(R.id.editButton);
+               // editButton = itemView.findViewById(R.id.editButton);
                 deleteButton = itemView.findViewById(R.id.deleteButton);
             }
         }
         // Method to edit an entry
-        private void editEntry(Entry entry, Context context) {
-            // Implement edit functionality, for example:
-            // You can pass the entry details to an edit activity or fragment
-            // Or you can show a dialog for editing
-            // Here, let's show a toast message with the course code of the selected entry
-            Toast.makeText(context, "Editing entry: " + entry.getCourseCode(), Toast.LENGTH_SHORT).show();
-        }
+//        private void editEntry(Entry entry, Context context) {
+//            // Implement edit functionality, for example:
+//            // You can pass the entry details to an edit activity or fragment
+//            // Or you can show a dialog for editing
+//            // Here, let's show a toast message with the course code of the selected entry
+//            Toast.makeText(context, "Editing entry: " + entry.getCourseCode(), Toast.LENGTH_SHORT).show();
+//        }
 
         // Method to delete an entry
         private void deleteEntry(Entry entry) {

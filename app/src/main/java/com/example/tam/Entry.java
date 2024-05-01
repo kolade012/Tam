@@ -60,13 +60,14 @@ public class Entry implements Comparable<Entry> {
 
     @Override
     public int compareTo(Entry other) {
-        // Implement comparison logic based on date and time
-        // For example:
-        // return this.date.compareTo(other.date); // Compare dates
-        // Or combine date and time for comparison
-        // String thisDateTime = this.date + " " + this.time;
-        // String otherDateTime = other.date + " " + other.time;
-        // return thisDateTime.compareTo(otherDateTime);
-        return 0; // Placeholder, update according to your logic
+        // Compare entries based on date and time
+        // First, compare dates
+        int dateComparison = this.date.compareTo(other.date);
+        if (dateComparison != 0) {
+            return dateComparison;
+        }
+
+        // If dates are the same, compare times
+        return this.time.compareTo(other.time);
     }
 }

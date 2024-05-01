@@ -1,10 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".UserHome">
+    android:padding="16dp"
+    android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Image view to display the app image -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="67dp"
+        android:layout_height="70dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        tools:ignore="ContentDescription" />
+
+    <!-- Button to search for intended courses -->
+
+    <!-- Button to view private timetable -->
+
+    <!-- Scroll view for the timetable entries -->
+
+    <Button
+        android:id="@+id/buttonSearchCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView6"
+        android:layout_alignParentEnd="true"
+        android:textColor="#261200"
+        android:layout_marginTop="-10dp"
+        android:layout_marginEnd="7dp"
+        android:text="SEARCH" />
+
+    <Button
+        android:id="@+id/buttonViewPrivateTimetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSearchCourses"
+        android:layout_alignParentEnd="true"
+        android:textColor="#261200"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="9dp"
+        android:text="View Private Timetable" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonViewPrivateTimetable"
+        android:layout_marginTop="16dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <!-- Linear layout to hold the timetable entries -->
+        <LinearLayout
+            android:id="@+id/linearLayoutTimetableEntries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>
